@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="Portfolio of Abubaker Baobaid — Computer Science and AI student at Effat University. Selected projects in full-stack development, AI and software engineering.">
+  <meta property="og:title" content="Abubaker Baobaid — Software & AI">
+  <meta property="og:description" content="Selected work, engineering projects and milestones.">
+  <meta property="og:type" content="website">
+  <title>Abubaker Baobaid — Software & AI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="page-progress" id="page-progress" aria-hidden="true"></div>
+  <header class="header" id="top">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Abubaker Baobaid home">a<span>b</span><i>.</i><small>ABUBAKER<br>BAOBAID</small></a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="#work" data-i18n="navWork">Selected work</a>
+        <a href="#story" data-i18n="navAbout">About</a>
+        <a href="#recognition" data-i18n="navHighlights">Recognition</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <button id="lang-toggle" type="button" class="lang-toggle" aria-label="Switch language">عربي <span aria-hidden="true">↗</span></button>
+        <a class="nav-contact" href="mailto:a30369814@gmail.com"><span data-i18n="sayHello">Say hello</span><span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" id="menu-toggle" aria-label="Open navigation menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="rule-mini"></span> <span data-i18n="portfolioTag">PORTFOLIO / 2026</span> <span class="eyebrow-city">JEDDAH — SAUDI ARABIA</span></p>
+        <p class="hero-name" data-i18n="heroName">Hi, I'm Abubaker Baobaid.</p>
+        <h1 id="hero-title"><span data-i18n="heroA">Software,</span><br><span data-i18n="heroB">with a</span> <em data-i18n="heroC">point.</em></h1>
+        <p class="hero-sub" data-i18n="heroSub">I build full-stack applications, experiment with intelligent systems, and enjoy turning complicated ideas into software people can use.</p>
+        <div class="hero-actions">
+          <a class="button button-ink" href="#work"><span data-i18n="exploreWork">Explore selected work</span><span aria-hidden="true">↗</span></a>
+          <a class="quiet-link" href="https://github.com/a30369814-code" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><div class="note-mark" aria-hidden="true">↳</div><div><strong data-i18n="heroNoteTitle">Computer Science · Artificial Intelligence</strong><span data-i18n="heroNoteText">Effat University / Expected graduation 2028</span></div></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-frame">
+          <div class="portrait-canvas"><img src="assets/deans-list-abubaker.jpg" alt="Abubaker Baobaid at his Dean's List recognition" fetchpriority="high"></div>
+          <div class="portrait-folio"><span>AB / 26</span><span class="folio-line"></span><span data-i18n="folioCaption">STUDENT · DEVELOPER</span></div>
+        </div>
+        <div class="image-side-note"><span>01 / 06</span><span data-i18n="imageSideNote">A little about the work and the person behind it.</span></div>
+        <div class="hero-corner" aria-hidden="true"><span>✳</span></div>
+      </div>
+    </section>
+
+    <div class="discipline-bar" aria-label="Areas of focus"><div class="shell discipline-inner"><span data-i18n="discipline1">Software engineering</span><i>—</i><span data-i18n="discipline2">Artificial intelligence</span><i>—</i><span data-i18n="discipline3">Full-stack development</span><span class="discipline-number">001—026</span></div></div>
+
+    <section class="work section-light" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-intro reveal"><p class="section-index">01 / <span data-i18n="selectedLabel">SELECTED WORK</span></p><div class="intro-row"><h2 id="work-title"><span data-i18n="workA">Proof is in</span><br><em data-i18n="workB">the projects.</em></h2><p data-i18n="workDesc">Not just a list of tools. A selection of problems I've explored, decisions I've made, and applications I've built.</p></div></div>
+        <div class="filter-row reveal" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" class="filter active" aria-pressed="true" data-i18n="allWork">All projects</button>
+          <button type="button" data-filter="ai" class="filter" aria-pressed="false" data-i18n="aiWork">AI systems</button>
+          <button type="button" data-filter="web" class="filter" aria-pressed="false" data-i18n="webWork">Web products</button>
+          <button type="button" data-filter="learning" class="filter" aria-pressed="false" data-i18n="learningWork">Experiments</button>
+          <span class="filter-total"><b id="filter-count">06</b> <span data-i18n="projectsLabel">PROJECTS</span></span>
+        </div>
+        <div class="project-list" id="project-list">
+          <article class="case case-feature reveal" data-category="ai" data-project="aquagent">
+            <div class="case-visual visual-aqua" aria-label="A conceptual illustration of AquaGent's decision workflow">
+              <div class="mock-head"><span>AG / AQUAGENT</span><span>ENGINEERING NOTE 001</span></div>
+              <div class="aqua-flow"><div class="flow-node"><small>01 / INPUT</small><strong>Conditions</strong><span>humidity / wind / energy</span></div><div class="flow-stem"><i></i><i></i></div><div class="flow-middle"><div class="flow-node"><small>02 / REASON</small><strong>Bayesian</strong><span>uncertainty</span></div><span>+</span><div class="flow-node"><small>03 / VALIDATE</small><strong>CSP</strong><span>constraints</span></div></div><div class="flow-stem"><i></i><i></i></div><div class="flow-out"><span class="flow-chip">FOG</span><span class="flow-chip">MOF</span><span class="flow-chip">SAFE STOP</span></div></div>
+              <div class="mock-foot"><span>DECISION SUPPORT / SIMULATION</span><span>↗</span></div>
+            </div>
+            <div class="case-content"><div class="case-top"><span class="case-id">01 — FEATURED STUDY</span><span class="project-status" data-i18n="inProgress">IN DEVELOPMENT</span></div><h3>AquaGent</h3><p class="case-kicker" data-i18n="aquaKicker">AI DECISION SUPPORT / WATER HARVESTING</p><p data-i18n="aquaDesc">A prototype that considers uncertainty, constraints and safety before recommending a water collection plan.</p><div class="case-tags"><span>Python</span><span>Bayesian Networks</span><span>CSP</span></div><button type="button" class="case-link" data-project-button="aquagent"><span data-i18n="readStudy">Read project notes</span><span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="case case-half reveal" data-category="web" data-project="mealradar"><div class="case-visual visual-meal"><div class="mini-app"><div class="mini-app-top"><b>meal<span>radar</span></b><small>FIND A PLACE</small></div><div class="mini-search">spicy noodles nearby <span>⌕</span></div><div class="mini-map"><div class="street st1"></div><div class="street st2"></div><div class="street st3"></div><span class="map-pin p1">●</span><span class="map-pin p2">●</span><span class="map-pin p3">●</span></div></div><span class="mock-label">SEARCH / DISCOVER / GO</span></div><div class="case-content"><div class="case-top"><span class="case-id">02 — WEB APPLICATION</span><span class="case-top-arrow">↗</span></div><h3>MealRadar</h3><p data-i18n="mealDesc">A location-aware meal search app built with Next.js, Google Places, and PostgreSQL.</p><div class="case-tags"><span>Next.js</span><span>Prisma</span><span>Google Places</span></div><button type="button" class="case-link" data-project-button="mealradar"><span data-i18n="viewCase">Explore project</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="case case-half reveal" data-category="ai web" data-project="store"><div class="case-visual visual-store"><div class="content-mock"><div class="content-heading"><small>AI STORE STUDIO</small><span>↗</span></div><div class="arabic-content" lang="ar" dir="rtl"><strong>محتوى يليق بمنتجك.</strong><div class="content-line long"></div><div class="content-line medium"></div><div class="content-line short"></div></div><div class="mini-content-bottom"><span>GENERATE / REFINE</span><b>AR → AI</b></div></div></div><div class="case-content"><div class="case-top"><span class="case-id">03 — AI PRODUCT</span><span class="case-top-arrow">↗</span></div><h3>AI Store Content Studio</h3><p data-i18n="storeDesc">An Arabic-first SaaS prototype for generating e-commerce product content using AI.</p><div class="case-tags"><span>Next.js</span><span>OpenAI</span><span>Stripe (test)</span></div><button type="button" class="case-link" data-project-button="store"><span data-i18n="viewCase">Explore project</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="case case-half reveal" data-category="web" data-project="craving"><div class="case-visual visual-craving"><div class="craving-board"><div class="craving-header"><span>C / CRAVING</span><span>⌖</span></div><div class="craving-sentence">Find the food.<br><em>Find the place.</em></div><div class="craving-pins"><span>01</span><span>02</span><span>03</span></div></div></div><div class="case-content"><div class="case-top"><span class="case-id">04 — WEB APPLICATION</span><span class="case-top-arrow">↗</span></div><h3>Craving</h3><p data-i18n="cravingDesc">A map-first restaurant finder with authentication, saved searches, and location-based discovery.</p><div class="case-tags"><span>Next.js</span><span>Supabase</span><span>Leaflet</span></div><button type="button" class="case-link" data-project-button="craving"><span data-i18n="viewCase">Explore project</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="case case-half reveal" data-category="web" data-project="smartstudy"><div class="case-visual visual-study"><div class="study-board"><span class="study-title">smartstudy<span>.</span></span><div class="study-lines"><span><i>01</i> Schedule <b>✓</b></span><span><i>02</i> Notes <b>✓</b></span><span><i>03</i> Quiz <b>→</b></span></div><div class="study-abstract">S<span>·</span>S</div></div></div><div class="case-content"><div class="case-top"><span class="case-id">05 — STUDENT PLATFORM</span><span class="case-top-arrow">↗</span></div><h3>SmartStudy</h3><p data-i18n="studyDesc">A course, notes, schedule and quiz organizer with PHP and MySQL.</p><div class="case-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div><button type="button" class="case-link" data-project-button="smartstudy"><span data-i18n="viewCase">Explore project</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="case case-compact reveal" data-category="learning" data-project="python"><div class="compact-name"><span class="case-id">06 — FOUNDATIONS</span><h3>Python Learning Journey</h3><p data-i18n="pythonDesc">Practical exercises in Python, OOP, APIs, desktop GUI development and computer vision.</p></div><div class="compact-right"><span class="compact-code">def learn():<br><i>&nbsp;&nbsp;return build()</i></span><button type="button" class="case-link" data-project-button="python"><span data-i18n="viewCase">Explore project</span><span aria-hidden="true">↗</span></button></div></article>
+        </div>
+        <div class="more-repos reveal"><span data-i18n="moreRepos">There is more work in progress.</span><a href="https://github.com/a30369814-code?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepos">Browse GitHub repositories</span> ↗</a></div>
+      </div>
+    </section>
+
+    <section class="story section-dark" id="story" aria-labelledby="story-title"><div class="shell"><p class="section-index pale">02 / <span data-i18n="aboutLabel">BEHIND THE WORK</span></p><div class="story-grid"><div class="story-heading reveal"><h2 id="story-title"><span data-i18n="aboutA">Learning by</span><br><em data-i18n="aboutB">making.</em></h2><div class="story-decor" aria-hidden="true">[ / ]<span>AB / PROCESS</span></div></div><div class="story-copy reveal"><p class="statement" data-i18n="storyLead">I'm a Computer Science student at Effat University with a focus on Artificial Intelligence. Building is how I understand things.</p><p data-i18n="storyP1">I like the full journey: understanding the problem, designing the interface, implementing the logic, and finding what breaks during testing.</p><p data-i18n="storyP2">My recent work explores AI-assisted decisions, restaurant discovery, content tools, and practical software for students. I care about the details as much as the idea.</p><div class="approach"><span class="small-label" data-i18n="approachLabel">HOW I APPROACH A PROJECT</span><div class="approach-steps"><div><b>01</b><span data-i18n="step1">Understand the problem</span></div><div><b>02</b><span data-i18n="step2">Make something usable</span></div><div><b>03</b><span data-i18n="step3">Test. Learn. Improve.</span></div></div></div></div></div></div></section>
+
+    <section class="recognition section-light" id="recognition" aria-labelledby="recognition-title"><div class="shell"><div class="section-intro reveal"><p class="section-index">03 / <span data-i18n="recognitionLabel">RECOGNITION</span></p><div class="intro-row"><h2 id="recognition-title"><span data-i18n="recA">Moments worth</span><br><em data-i18n="recB">remembering.</em></h2><p data-i18n="recognitionDesc">Milestones that reflect curiosity, discipline, teamwork and consistent effort.</p></div></div><div class="award-grid">
+      <article class="award-competition reveal"><div class="award-header"><span>IEEEXTREME 20.0 / 2026</span><span>↗</span></div><p class="award-eyebrow" data-i18n="programming">COMPETITIVE PROGRAMMING</p><h3>29<sup>th</sup><small data-i18n="worldwide">worldwide</small></h3><div class="award-ranks"><div><strong>03<sup>rd</sup></strong><small data-i18n="saudi">Saudi Arabia</small></div><div><strong>10<sup>th</sup></strong><small data-i18n="region">IEEE Region 8</small></div><div><strong>29<sup>th</sup></strong><small data-i18n="world">World</small></div></div><p class="award-foot" data-i18n="ieeeFoot">24 hours of problem solving, coding and teamwork.</p></article>
+      <article class="award-dean reveal"><div class="award-header"><span>EFFAT UNIVERSITY / 2025–26</span><span>✧</span></div><div class="dean-body"><div class="dean-portrait"><img src="assets/deans-list-abubaker.jpg" loading="lazy" alt="Abubaker holding his Dean's List certificate"></div><div class="dean-info"><span class="award-eyebrow" data-i18n="academic">ACADEMIC RECOGNITION</span><h3>Dean’s<br>List<span>.</span></h3><p data-i18n="deanDesc">Recognized by Effat University's College of Engineering for academic achievement.</p><a href="https://www.linkedin.com/in/abubaker-baobaid-1a1334424/" target="_blank" rel="noopener noreferrer"><span data-i18n="deanLink">View on LinkedIn</span> ↗</a></div></div></article>
+    </div></div></section>
+
+    <section class="capabilities section-light" id="skills" aria-labelledby="skills-title"><div class="shell skills-grid"><div class="skills-head reveal"><p class="section-index">04 / <span data-i18n="skillsLabel">TOOLBOX</span></p><h2 id="skills-title"><span data-i18n="skillsA">Tools change.</span><br><em data-i18n="skillsB">Thinking lasts.</em></h2><p data-i18n="skillsDesc">Technologies I have worked with across coursework, prototypes and personal projects.</p></div><div class="skills-table reveal"><div><span>01</span><strong data-i18n="skillLang">Languages</strong><p>Python · TypeScript · JavaScript · C++ · SQL</p></div><div><span>02</span><strong data-i18n="skillWeb">Frontend & backend</strong><p>Next.js · React · FastAPI · PHP · REST APIs</p></div><div><span>03</span><strong data-i18n="skillAI">AI & data</strong><p>Bayesian Networks · CSP · LLM APIs · PostgreSQL</p></div><div><span>04</span><strong data-i18n="skillTools">Development</strong><p>Git · GitHub · Docker · Prisma · Supabase</p></div></div></div></section>
+
+    <section class="contact section-dark" id="contact" aria-labelledby="contact-title"><div class="shell"><p class="section-index pale">05 / <span data-i18n="contactLabel">GET IN TOUCH</span></p><div class="contact-grid"><div class="contact-intro reveal"><h2 id="contact-title"><span data-i18n="contactA">Let's make</span><br><em data-i18n="contactB">it real.</em></h2><p data-i18n="contactDesc">Open to internship opportunities, thoughtful collaborations, and conversations about interesting software problems.</p></div><div class="contact-links reveal"><span class="small-label" data-i18n="contactDirect">DIRECT CONTACT</span><a class="contact-big" href="mailto:a30369814@gmail.com">a30369814@gmail.com <span>↗</span></a><a class="contact-big contact-phone" href="tel:+966550665543">+966 55 066 5543 <span>↗</span></a><div class="social-row"><a href="https://github.com/a30369814-code" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/abubaker-baobaid-1a1334424/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div><footer class="footer"><span>© <span id="year">2026</span> ABUBAKER BAOBAID</span><span data-i18n="footerCity">Jeddah, Saudi Arabia</span><a href="#top" data-i18n="backTop">Back to top ↑</a></footer></div></section>
+  </main>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-wrap"><div class="dialog-header"><span id="dialog-ref">PROJECT / 01</span><button class="dialog-close" id="dialog-close" type="button" aria-label="Close project details">✕</button></div><p class="dialog-overline" id="dialog-type">PROJECT CASE STUDY</p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-facts"><div><small data-i18n="modalStatus">STATUS</small><strong id="dialog-status"></strong></div><div><small data-i18n="modalStack">TECH STACK</small><div id="dialog-tags"></div></div></div><h3 data-i18n="modalHighlights">WHAT IT DOES</h3><ul id="dialog-highlights"></ul><a id="dialog-github" class="button button-ink" target="_blank" rel="noopener noreferrer"><span data-i18n="sourceLink">Open GitHub repository</span><span>↗</span></a><p class="dialog-no-github" id="dialog-no-github" data-i18n="unpublished">This course prototype is not yet available in a public repository.</p></div></dialog>
+</body>
+</html>
