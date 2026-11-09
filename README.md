@@ -29,3 +29,4 @@ Then visit http://localhost:5500. A local web server is preferred for testing.
 - Public contact information: a30369814@gmail.com and +966 55 066 5543.
 - To update a project, edit the case markup in `index.html` and the matching text in `script.js`.
 - Publishing makes both the phone number and email visible to everyone.
+# portfolio
