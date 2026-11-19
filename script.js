@@ -97,6 +97,7 @@ function translate(lang) {
   });
   langToggle.innerHTML = lang === 'en' ? 'عربي <span aria-hidden="true">↗</span>' : 'English <span aria-hidden="true">↗</span>';
   langToggle.setAttribute('aria-label', lang === 'en' ? 'Switch to Arabic' : 'التبديل إلى الإنجليزية');
+  menuToggle.setAttribute('aria-label', menuToggle.getAttribute('aria-expanded') === 'true' ? (lang === 'ar' ? 'إغلاق القائمة' : 'Close navigation') : (lang === 'ar' ? 'فتح القائمة' : 'Open navigation'));
   document.title = lang === 'ar' ? 'أبوبكر باعبيد — مشاريع البرمجة والذكاء الاصطناعي' : 'Abubaker Baobaid — Software & AI';
   try {localStorage.setItem('abPortfolioLangV2',lang);} catch(e) {}
 }
