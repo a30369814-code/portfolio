@@ -137,7 +137,7 @@ menuToggle.addEventListener('click',()=>{
   menuToggle.setAttribute('aria-label',now?'Close navigation':'Open navigation');
   nav.classList.toggle('open',now);
 });
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false')}));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open navigation')}));
 $('year').textContent=String(new Date().getFullYear());
 const revealElements=[...document.querySelectorAll('.reveal')];
 if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
