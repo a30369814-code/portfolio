@@ -97,6 +97,7 @@ function translate(lang) {
   });
   langToggle.innerHTML = lang === 'en' ? 'عربي <span aria-hidden="true">↗</span>' : 'English <span aria-hidden="true">↗</span>';
   langToggle.setAttribute('aria-label', lang === 'en' ? 'Switch to Arabic' : 'التبديل إلى الإنجليزية');
+  menuToggle.setAttribute('aria-label', menuToggle.getAttribute('aria-expanded') === 'true' ? (lang === 'ar' ? 'إغلاق القائمة' : 'Close navigation') : (lang === 'ar' ? 'فتح القائمة' : 'Open navigation'));
   document.title = lang === 'ar' ? 'أبوبكر باعبيد — مشاريع البرمجة والذكاء الاصطناعي' : 'Abubaker Baobaid — Software & AI';
   try {localStorage.setItem('abPortfolioLangV2',lang);} catch(e) {}
 }
@@ -134,10 +135,10 @@ langToggle.addEventListener('click',()=>translate(currentLanguage==='en'?'ar':'e
 menuToggle.addEventListener('click',()=>{
   const now=menuToggle.getAttribute('aria-expanded')!=='true';
   menuToggle.setAttribute('aria-expanded',String(now));
-  menuToggle.setAttribute('aria-label',now?'Close navigation':'Open navigation');
+  menuToggle.setAttribute('aria-label',now?(currentLanguage==='ar'?'إغلاق القائمة':'Close navigation'):(currentLanguage==='ar'?'فتح القائمة':'Open navigation'));
   nav.classList.toggle('open',now);
 });
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false')}));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label',currentLanguage==='ar'?'فتح القائمة':'Open navigation')}));
 $('year').textContent=String(new Date().getFullYear());
 const revealElements=[...document.querySelectorAll('.reveal')];
 if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
