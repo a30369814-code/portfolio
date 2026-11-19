@@ -134,10 +134,10 @@ langToggle.addEventListener('click',()=>translate(currentLanguage==='en'?'ar':'e
 menuToggle.addEventListener('click',()=>{
   const now=menuToggle.getAttribute('aria-expanded')!=='true';
   menuToggle.setAttribute('aria-expanded',String(now));
-  menuToggle.setAttribute('aria-label',now?'Close navigation':'Open navigation');
+  menuToggle.setAttribute('aria-label',now?(currentLanguage==='ar'?'إغلاق القائمة':'Close navigation'):(currentLanguage==='ar'?'فتح القائمة':'Open navigation'));
   nav.classList.toggle('open',now);
 });
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open navigation')}));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label',currentLanguage==='ar'?'فتح القائمة':'Open navigation')}));
 $('year').textContent=String(new Date().getFullYear());
 const revealElements=[...document.querySelectorAll('.reveal')];
 if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
