@@ -1,0 +1,30 @@
+name: JavaScript syntax check
+
+on:
+  pull_request:
+    paths:
+      - 'script.js'
+      - '.github/workflows/javascript-syntax.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'script.js'
+      - '.github/workflows/javascript-syntax.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    name: Validate portfolio JavaScript
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: node --check script.js
